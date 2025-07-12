@@ -2,6 +2,7 @@ import type { IPost, IPostResponse } from "@/models/IPostResponse";
 import { fetchData } from "@/utils/fetchData";
 import { useEffect, useState } from "react";
 import Post from "./Post";
+import { Grid2x2, Grid3x3, Square } from "lucide-react";
 
 const PostGrid = () => {
   const [postList, setPostList] = useState<IPost[]>([]);
@@ -24,6 +25,11 @@ const PostGrid = () => {
         {postList.length
           ? postList.map((post) => <Post key={post.id} post={post} />)
           : "Loading"}
+      </div>
+      <div className="fixed right-0 top-0 h-full flex flex-col justify-center items-center gap-8 px-20">
+        <Grid3x3 />
+        <Grid2x2 />
+        <Square />
       </div>
     </div>
   );
