@@ -3,7 +3,6 @@ import { Bell, Film, Heart, House, Search, Send } from "lucide-react";
 import ReelGrid from "@/components/ReelGrid";
 import StoryList from "@/components/StoryList";
 import PostGrid from "@/components/PostGrid";
-import { IconHome, IconHomeFilled } from "@tabler/icons-react";
 
 export function meta() {
   return [
